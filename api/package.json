@@ -1,0 +1,21 @@
+{
+  "name": "api-biblioteca",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido utilizando o ORM Sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "Estevan Hernandes Silva de Oliveira",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "sequelize-cli": "^6.5.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.3"
+  }
+}
