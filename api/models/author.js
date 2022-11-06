@@ -10,10 +10,8 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Author.hasMany(models.BookHasAuthors, {
-        foreignKey: 'author_id',
-        onUpdate: 'cascade',
-        onDelete: 'restrict'
+      Author.belongsToMany(models.Book, {
+        through: models.book_has_authors
       })
     }
   }
@@ -26,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Author',
-    tableName: 'author'
+    tableName: 'authors'
   });
   return Author;
 };
