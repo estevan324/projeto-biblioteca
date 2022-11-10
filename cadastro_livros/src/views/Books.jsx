@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Books.css";
 
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 function BookView(props) {
   const [books, setBooks] = useState([]);
