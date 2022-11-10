@@ -8,7 +8,7 @@ Projeto criado utilizando ReactJS e NodeJS (com o ORM Sequelize) onde irá simul
 
 2. Dentro do seu XAMPP, ative o 'Apache' e o 'MySQL' para dar início aos servidores
 3. Crie um banco de dados chamado 'prj_biblioteca' dentro do phpMyAdmin
-4. No projeto entre na pasta api, procure a pasta config e abra o arquivo 'config.json'. Altere dentro de 'development' o username e a senha de acordo com o padrão do seu dispositivo
+4. No projeto entre na pasta api, procure a pasta config e abra o arquivo 'config.json'. Altere dentro de 'development' o username e a senha de acordo com o seu sistema
 5. Abra dois terminais dentro da pasta do projeto, e em cada um deles execute os seguintes comandos:
 
 `npm run startNode`
