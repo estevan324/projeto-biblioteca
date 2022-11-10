@@ -1,0 +1,19 @@
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.register {
+  border: 1.5px solid #14213d;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.image-place {
+  margin: auto;
+}
+.image-place > .book-image {
+  width: 100%;
+  height: 100%;
+}
