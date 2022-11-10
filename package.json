@@ -1,0 +1,20 @@
+{
+  "name": "projeto-biblioteca",
+  "version": "1.0.0",
+  "description": "Projeto criado utilizando o ORM Sequelize e a biblioteca ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "startReact": "cd cadastro_livros && npm i && npm start",
+    "startNode": "cd api && npm i && npx sequelize-cli db:migrate && nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estevan324/projeto-biblioteca.git"
+  },
+  "author": "Estevan Hernandes Silva de Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estevan324/projeto-biblioteca/issues"
+  },
+  "homepage": "https://github.com/estevan324/projeto-biblioteca#readme"
+}
