@@ -1,7 +1,5 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
+"use strict";
+const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class Author extends Model {
     /**
@@ -11,20 +9,23 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Author.belongsToMany(models.Book, {
-        through: models.book_has_authors
-      })
+        through: models.book_has_authors,
+      });
     }
   }
-  Author.init({
-    name: DataTypes.STRING(45),
-    birthDate: DataTypes.DATE,
-    gender: DataTypes.ENUM({
-      values: ['masculino', 'feminino', 'não identificado']
-    })
-  }, {
-    sequelize,
-    modelName: 'Author',
-    tableName: 'authors'
-  });
+  Author.init(
+    {
+      name: DataTypes.STRING(45),
+      birthDate: DataTypes.DATEONLY,
+      gender: DataTypes.ENUM({
+        values: ["masculino", "feminino", "não identificado"],
+      }),
+    },
+    {
+      sequelize,
+      modelName: "Author",
+      tableName: "authors",
+    }
+  );
   return Author;
 };

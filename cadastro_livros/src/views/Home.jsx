@@ -34,7 +34,7 @@ function Home(props) {
       {
         name: name,
         gender: gender,
-        date: date,
+        birthDate: date,
       },
     ]);
   };
@@ -46,10 +46,10 @@ function Home(props) {
       subtitle: subtitle,
       Authors: authorList,
     })
-      .then(function (response) {
-        console.log(response);
+      .then((response) => {
+        console.log(response.data);
       })
-      .catch(function (error) {
+      .catch((error) => {
         console.log(error);
       });
   };
